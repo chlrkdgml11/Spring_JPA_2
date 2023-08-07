@@ -1,6 +1,8 @@
 package JPA_2_book.JPA_2_shop;
 
 import JPA_2_book.JPA_2_shop.domain.Member;
+import JPA_2_book.JPA_2_shop.domain.Order;
+import JPA_2_book.JPA_2_shop.domain.OrderItem;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -18,6 +20,10 @@ public class Main {
 
 // 등록
         try {
+
+            Order order = new Order();
+            order.addOrderItem(new OrderItem());
+
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
