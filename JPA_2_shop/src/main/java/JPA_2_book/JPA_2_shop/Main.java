@@ -20,9 +20,7 @@ public class Main {
 
 // 등록
         try {
-
-            Order order = new Order();
-            order.addOrderItem(new OrderItem());
+            
 
             tx.commit();
         } catch (Exception e) {
@@ -30,6 +28,8 @@ public class Main {
         } finally {
             em.close();
         }
+
+        emf.close();
 
     }
 }
