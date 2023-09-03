@@ -20,7 +20,7 @@ public class Main {
 
 // 등록
         try {
-            
+
 
             tx.commit();
         } catch (Exception e) {
