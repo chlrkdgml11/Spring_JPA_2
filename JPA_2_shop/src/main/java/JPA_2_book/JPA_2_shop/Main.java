@@ -1,6 +1,7 @@
 package JPA_2_book.JPA_2_shop;
 
 import JPA_2_book.JPA_2_shop.domain.Book;
+import JPA_2_book.JPA_2_shop.domain.Member;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -18,12 +19,6 @@ public class Main {
 
 // 등록
         try {
-
-            Book book = new Book();
-            book.setName("JPA");
-            book.setAuthor("김영한");
-
-            em.persist(book);
 
 
             tx.commit();
