@@ -1,6 +1,5 @@
 package JPA_2_book.JPA_2_shop;
 
-import JPA_2_book.JPA_2_shop.domain.Book;
 import JPA_2_book.JPA_2_shop.domain.Member;
 
 import javax.persistence.EntityManager;
@@ -19,6 +18,7 @@ public class Main {
 
 // 등록
         try {
+
 
 
             tx.commit();
